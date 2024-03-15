@@ -1,0 +1,286 @@
+#body{
+    background-color: rgb(224, 224, 224);
+}
+.headdiv{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    color:  rgb(255, 255, 255);
+    margin-bottom: 50px;
+    font-family: "Tangerine", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
+    align-items: center;
+}
+.mittediv{
+    display: flex;
+    justify-content: space-evenly;
+}
+.inputdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerimgdiv{
+width: 15%;
+height: 15%;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+.headerhdiv{ 
+    width: 60%;
+    text-align: center;
+    
+}
+#searchinput{
+    border: none;
+    height: 35px;
+    width: 320px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+    outline: none;
+    padding: 10px;
+    font-family: "EB Garamond", serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    border: 1px dashed red;
+    border-right: none;
+}
+#searchbutton{
+    background-image: url("https://cdn4.iconfinder.com/data/icons/dellixmas-png/PNG/64/001_search.png");
+    background-size: 100% 100%;
+    width: 50px;
+    height: 35px;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
+    background-color: rgb(0, 0, 0);
+    border: 1px dashed red;
+    border-left: none;
+}
+.card{
+    text-align: center;
+    width: 450px;
+    height: 500px;
+    border: 2px solid rgb(243, 165, 19);
+    box-shadow: 7px 7px 8px 5px rgb(252, 226, 177) inset ;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    padding-top: 20px;
+}
+#maincarddiv{
+   margin-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.cardimg{
+    width: 90%;
+    height: 60%;
+}
+.gotorezept{
+    margin-top: 20px;
+    background-color: rgb(243, 165, 19);
+    border: none;
+    width: 150px;
+    height: 40;
+    color: rgb(27, 27, 27);
+    font-family: "Tangerine", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.gotorezept:hover{
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.27),0 17px 50px 0 rgba(0,0,0,0.25);
+}
+/*
+.neueP{
+    display : block;  
+}*/
+.spiele{
+    background-image: url("https://cdn2.iconfinder.com/data/icons/art-designing-flat-colorful/2048/1856_-_Magic_Wand_Tool-64.png");
+    background-size: 100% 100%;
+    width: 70px;
+    height: 50px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+}
+.label{
+    font-family: "Tangerine", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(32, 32, 32);
+    margin-right: 15px;
+}
+#kategorie{
+    border: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    font-family: "EB Garamond", serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    color:rgb(92, 92, 92);
+    margin-left: 10px;
+}
+.neueP{
+    width: 800px;
+    height: 800px;
+}
+.rezeptdiv{
+    position: relative;
+    background-color: rgb(255, 246, 235);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.xbutton{
+background-image: url("https://cdn2.iconfinder.com/data/icons/funtime-objects-part-2/60/005_055_delete_cross_close_cancel_exit_vote-64.png");
+background-size: 100% 100%;
+position: absolute;
+width: 30px;
+height: 30px;
+right: 15px;
+top: 15px;
+border: none;
+background-color:rgb(255, 246, 235);
+}
+.rundomxbutton{
+background-image: url("https://cdn2.iconfinder.com/data/icons/funtime-objects-part-2/60/005_055_delete_cross_close_cancel_exit_vote-64.png");
+background-size: 100% 100%;
+position: absolute;
+width: 30px;
+height: 30px;
+right: 570px;
+top: 425px;
+border: none;
+background-color:rgb(252, 226, 177);
+}
+
+.urgentdiv{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.schnell{
+    width: 70px;
+    height: 50px;
+    border:none;
+    margin-top: 10px;
+    background-color:rgb(230, 230, 230); 
+    background-size: 100% 100%;
+    margin-bottom: 10px;
+}
+.schnell:hover{
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.27),0 17px 50px 0 rgba(0,0,0,0.25);
+}
+.dessert{
+    background-image: url("https://media.istockphoto.com/id/541267186/photo/chocolate-fondant-with-strawberries-and-powdered-sugar.webp?b=1&s=170667a&w=0&k=20&c=FRPFrV7sXl2SCqW_Oh3iIiagPBXTCGukqZ11I6hZXAM=");
+    margin-left: 30px;
+}
+.starter{
+    background-image: url("https://media.istockphoto.com/id/496999616/photo/delicious-appetizer.webp?b=1&s=170667a&w=0&k=20&c=-tHSfz5g5DeeZhewY043Ej31CsvAzcbI_-DrVQVCqrg=");
+    margin-left: 30px;
+}
+.misce{
+    background-image: url("https://media.istockphoto.com/id/957820918/photo/cook-preparing-many-plates-in-a-restaurant-kitchen-catering-caterer.webp?b=1&s=170667a&w=0&k=20&c=7lc81K_uXGfmpFf3fwTaaUJeEeqj8ZPPOdqNzNdjSiY=");
+    margin-left: 45px;
+}
+.dessertlabel{
+    margin-left: 28px;
+}
+.starterlabel{
+    margin-left: 30px;
+}
+.miscelabel{
+    margin-left: 10px;
+}
+
+.checkbox{
+width: 15px;
+height: 15px;
+margin-left: 30px;
+}
+.checkin{
+text-decoration-line: line-through;
+color: rgb(153, 153, 153);
+}
+
+.addbutton{
+    width: 70px;
+    height: 25px;
+    margin-left: 30px;
+    border: none;
+    background-color: rgb(243, 165, 19);
+    font-family: "Tangerine", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.addbutton:hover{
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.27),0 17px 50px 0 rgba(0,0,0,0.25);
+}
+.addbox{
+    background-color: rgb(160, 160, 160);
+}
+.offcanvasdiv{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px gray dotted;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.allremove{
+    width: 150px;
+    height: 25px;
+    border: none;
+    background-color: rgb(243, 165, 19);
+    font-family: "Tangerine", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.allremove:hover{
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.27),0 17px 50px 0 rgba(0,0,0,0.25);
+}
+.btn:hover{
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.27),0 17px 50px 0 rgba(0,0,0,0.25);
+}
+.mainingdiv{
+    display: flex;
+}
+.kleiningdiv1{
+    width: 250px;
+    border-bottom: grey dashed 1px;
+    padding-top: 20px;
+}
+.kleiningdiv2{
+    border-bottom: grey dashed 1px;
+    padding-top: 20px;
+}
