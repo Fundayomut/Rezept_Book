@@ -28,12 +28,12 @@ console.log(searchInput);
         return resJson;      
     })
     .then((promise)=>{
-       let PromiseData=promise.meals;
+       let promiseData=promise.meals;
        mealListe=[];
 
-       if(PromiseData!=null){
-        for(let x=0 ; x<PromiseData.length; x++){
-            mealListe.push(PromiseData[x]);
+       if(promiseData!=null){
+        for(let x=0 ; x<promiseData.length; x++){
+            mealListe.push(promiseData[x]);
         }
        }else{
         alert("upps! Keine Rezepte gefunden.")
@@ -92,7 +92,7 @@ function showmeal(idMeal){
              for(let x=0 ; x<promiseData.length; x++){
                  mealListe.push(promiseData[x]);
                  //console.log(`mealliste id:`,mealListe[x].idMeal,mealListe[x].strMeal);
-                 //console.log(`mealliste instr.:`, mealListe[x].strInstructions)
+                 console.log(`mealliste instr.:`, mealListe[x])
                  //console.log(`id mealparam`,idMeal);
                  //alert(mealListe[x].strInstructions)
                  cardCreate();
@@ -105,15 +105,20 @@ function showmeal(idMeal){
                 strIngredient += `<div class="mainingdiv"><div class="kleiningdiv1"><p>${mealListe[x][`strIngredient${i}`]}:${mealListe[x][`strMeasure${i}`]}</div><div class="kleiningdiv2"><input onclick="checkList(event)" id="checkbox${i}" type="checkbox" class="checkbox"><button id="buttonId${i}" onclick="addList(event)" class="addbutton">Add</button></p></div></div>`;
             }
                 }
-                 let instructions = `<p><b>Vorbereitung von:</b></p><p>${mealListe[x].strInstructions}</p>`
+                 let instructions = `<div class="vordiv"><p><b>Vorbereitung von:</b></p><p class="vorparagraf">${mealListe[x].strArea}</p></div><div><p>${mealListe[x].strInstructions}</p></div>`
                  neuediv.innerHTML=`<p><b>Zutaten:</b></p>${strIngredient}<hr>${instructions} </p>`
                  neuediv.classList.add("rezeptdiv");
                  let xbutton=document.createElement("button");
                  xbutton.classList.add("xbutton");
                  neuediv.appendChild(xbutton);
+                 neuediv.classList.add("neuediv");
                  mainCardDiv.appendChild(neuediv);
                  neuediv.appendChild(neueP);
                  xbutton.addEventListener("click",allRezept);
+                 let showDiv=document.createElement("div");
+                 showDiv.classList.add("showdiv");
+                 showDiv.innerHTML=`<p>Schauen Sie sich das Rezept auf YouTube an</p><p><a href="https://www.youtube.com/watch?v=etbJ9ssgsWY"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_youtube-64.png" ></a></p>`
+                 neuediv.appendChild(showDiv)
              }
     })
        
@@ -166,10 +171,10 @@ function rundomMeal(){
         return resJson;      
     })
     .then((promise)=>{
-       let PromiseData=promise.meals;
+       let promiseData=promise.meals;
        mealListe=[];
-       for(let x=0; x<PromiseData.length; x++){
-        mealListe.push(PromiseData[x]);
+       for(let x=0; x<promiseData.length; x++){
+        mealListe.push(promiseData[x]);
        }
        cardCreate();
        let rundomXButton=document.createElement("button");
@@ -192,10 +197,10 @@ function kategorieFunc(){
             return resJson;    
     })
         .then((promise)=>{
-        let PromiseData=promise.meals;
+        let promiseData=promise.meals;
         mealListe=[];
-        for(let x=0; x<PromiseData.length; x++){
-         mealListe.push(PromiseData[x]);
+        for(let x=0; x<promiseData.length; x++){
+         mealListe.push(promiseData[x]);
         }
         cardCreate();
      })
@@ -210,10 +215,10 @@ function kategorieDessert(schnelParam){
             return resJson;    
     })
         .then((promise)=>{
-        let PromiseData=promise.meals;
+        let promiseData=promise.meals;
         mealListe=[];
-        for(let x=0; x<PromiseData.length; x++){
-         mealListe.push(PromiseData[x]);
+        for(let x=0; x<promiseData.length; x++){
+         mealListe.push(promiseData[x]);
         }
         cardCreate();
      }) 

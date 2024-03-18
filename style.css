@@ -106,10 +106,15 @@ align-content: center;
 .gotorezept:hover{
     box-shadow: 0 16px 16px 0 rgba(0,0,0,0.27),0 17px 50px 0 rgba(0,0,0,0.25);
 }
-/*
-.neueP{
-    display : block;  
-}*/
+.neuediv{
+    font-family: "EB Garamond", serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
 .spiele{
     background-image: url("https://cdn2.iconfinder.com/data/icons/art-designing-flat-colorful/2048/1856_-_Magic_Wand_Tool-64.png");
     background-size: 100% 100%;
@@ -139,10 +144,6 @@ align-content: center;
     font-style: normal;
     color:rgb(92, 92, 92);
     margin-left: 10px;
-}
-.neueP{
-    width: 800px;
-    height: 800px;
 }
 .rezeptdiv{
     position: relative;
@@ -283,4 +284,20 @@ color: rgb(153, 153, 153);
 .kleiningdiv2{
     border-bottom: grey dashed 1px;
     padding-top: 20px;
+}
+
+.showdiv{
+    font-weight: 900;
+    color: red;
+}
+.vordiv{
+    display: flex;
+    justify-content: space-between;
+}
+.vorparagraf{
+    font-family: "Tangerine", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(255, 166, 0);;
 }
